@@ -1,0 +1,135 @@
+@import "bootstrap.less";
+
+
+body{
+	margin-top:60px;
+}
+
+
+
+.logo{
+	display: inline-block;
+	width: 63px;
+	height: 42px;
+	background: url("../img/hdr-spr.png") 0 -512px no-repeat ;
+	margin-top:10px;
+}
+
+.mytitle{
+	margin-bottom: 20px;
+}
+
+.masking-parent {
+	position: relative;
+	background: #0071c5;
+	color: white;
+
+}
+
+.masking-text{
+	padding: 20px;
+	a{
+		height: 40px;
+		background: @blue-lighter;
+		padding: 5px 40px;
+	}
+	a:hover{
+		color: white;
+		background-color: @blue-light;
+	}
+}
+
+@media screen and (min-width: 768px){
+	.masking-text {
+		position: absolute;
+		bottom: 0;
+		
+	}
+}
+
+.masking {
+	position: relative;
+	box-shadow: 2px 2px 2px black;
+
+}
+
+@media screen and (max-width:1024px) and (min-width:768px){
+	.masking{
+		margin-top:20px;
+	}
+	
+}
+
+.my-text {
+	height: 195px;
+	margin-top: 20px;
+	padding: 30px;
+	//border:1px solid black;
+	li{
+		height: 25px;
+	}
+	background:@blue-std;
+
+	box-shadow: 2px 2px 2px black;
+}
+
+@media screen and(min-width:1024px){
+	.my-text2 {
+		margin-bottom: 25px;
+		margin-top: 0;
+	}
+}
+
+@media screen and(max-width:768px){
+	.masking{
+		margin-top: 20px;
+	}
+
+}
+
+
+
+.masked {
+	position: absolute;
+	top:80%;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0,0,0,.5); 
+	color: white;
+	transition:top .15s linear;
+	overflow: hidden;
+	padding-left:  20px;
+}
+
+.masked:hover {
+	top:0;
+
+}
+
+.login-menu{
+	width: 400px;
+	height: 220px;
+	padding: 20px;
+	padding-top: 10px;
+	background: white;
+	border-radius: 20px;
+}
+.main{
+	background: @blue-dark;
+  color: @text-color-light;
+  a {
+    color: @text-color-light;
+    &:hover {
+      color: @blue-lighter;
+    }
+  }
+  >.container > .row {
+    margin-bottom: 40px;
+  }
+
+}
+
+.footer{
+	margin-top: 20px;
+}
